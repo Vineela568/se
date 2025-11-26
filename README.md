@@ -22,3 +22,7 @@ kubectl port-forward svc/mynginx 8081:80
 
     docker pull jasonrivers/nagios:latest
     docker run --name nagiosdemo -p 8888:80 jasonrivers/nagios:latest
+
+
+    FROM nginx:alpine
+COPY . /usr/share/nginx/html
