@@ -7,63 +7,6 @@
 </head>
 <body>
     <h1>This is SE</h1>
-    /*minikube start --driver=docker
-minikube start --driver=docker
-minikube kubectl -- get pods -A
-minikube dashboard
-kubectl version --client
-3.	minikube update-check
-4.	minikube update
-//start 
-minikube start
-kubectl create deployment mynginx --image=nginx
-
-if already created then 
-
-kubectl set image deployment/myngnix nginx=nginx:latest
- kubectl get deployments
- 	kubectl get pods
-  	kubectl describe pods
-    kubectl expose deployment mynginx --type=NodePort --port=80 --target-port=80
-    kubectl scale deployment mynginx --replicas=4
-kubectl get service myngnix
-kubectl port-forward svc/mynginx 8081:80
-
-    docker pull jasonrivers/nagios:latest
-    docker run --name nagiosdemo -p 8888:80 jasonrivers/nagios:latest
-*/
-
-    /*
-   pipeline {
-    agent any
-    tools{
-        maven 'MAVEN_HOME'
-    }
-    stages {
-        stage('git repo & clean') {
-            steps {
-                //bat "rmdir  /s /q mavenjava"
-                bat "git clone https://github.com/Harshinampally/Hibernate.git"
-                bat "mvn clean -f Hibernate"
-            }
-        }
-        stage('install') {
-            steps {
-                bat "mvn install -f Hibernate" 
-            }
-        }
-        stage('test') {
-            steps {
-                bat "mvn test -f Hibernate"
-            }
-        }
-        stage('package') {
-            steps {
-                bat "mvn package -f Hibernate"
-            }
-        }
-    }
-}\
-*/
+   
 </body>
 </html>
